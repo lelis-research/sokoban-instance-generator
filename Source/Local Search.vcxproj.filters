@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Desktop\b7d5d8ed5a3f9bc224fd5b2b292162448af5667d\Source\Motion Planning.vcxproj.filters" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="0. Static Header">
+      <UniqueIdentifier>{66cf3ccd-561c-4930-8fb4-926538e8446b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Utils">
+      <UniqueIdentifier>{838e46f8-31bc-4a08-8f90-4401c150bde6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Instance">
+      <UniqueIdentifier>{6bd5b7bf-de2d-4f08-b388-efc29bfff9da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Neighborhood">
+      <UniqueIdentifier>{ea81f42c-41fb-4e95-a6fe-d686dfb60826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. Local Search">
+      <UniqueIdentifier>{822ae3ef-2f2a-49dd-8d46-c18392345581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Utils\Blossom5">
+      <UniqueIdentifier>{dc937a9a-2441-439c-a8e1-623ac2653edf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Utils\Memory">
+      <UniqueIdentifier>{12fb5985-7726-4fab-a446-b85abaf6affe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Heuristics">
+      <UniqueIdentifier>{08a09d80-57e1-4565-abf3-b2eafc3d2429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6. Search">
+      <UniqueIdentifier>{9db40f8e-11da-40f7-8901-cecefc6421dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="7. AStar">
+      <UniqueIdentifier>{760bdc3c-6b1e-489f-99bc-2c880194e3c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>0. Static Header</Filter>
+    </ClCompile>
+    <ClCompile Include="Reader.cpp">
+      <Filter>1. Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Instance.cpp">
+      <Filter>2. Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="Show.cpp">
+      <Filter>1. Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Neighborhood.cpp">
+      <Filter>3. Neighborhood</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>1. Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomWalk.cpp">
+      <Filter>4. Local Search</Filter>
+    </ClCompile>
+    <ClCompile Include="Distances.cpp">
+      <Filter>5. Heuristics</Filter>
+    </ClCompile>
+    <ClCompile Include="EMM.cpp">
+      <Filter>5. Heuristics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\MinCost.cpp">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\misc.cpp">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMduals.cpp">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMexpand.cpp">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMinit.cpp">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMinterface.cpp">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMmain.cpp">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMrepair.cpp">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMshrink.cpp">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="BreadthFirstSearch.cpp">
+      <Filter>6. Search</Filter>
+    </ClCompile>
+    <ClCompile Include="BestImprovement.cpp">
+      <Filter>4. Local Search</Filter>
+    </ClCompile>
+    <ClCompile Include="IPDB.cpp">
+      <Filter>5. Heuristics</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearConflicts.cpp">
+      <Filter>5. Heuristics</Filter>
+    </ClCompile>
+    <ClCompile Include="LowerboundIPDB.cpp">
+      <Filter>5. Heuristics</Filter>
+    </ClCompile>
+    <ClCompile Include="LowerboundPDB.cpp">
+      <Filter>5. Heuristics</Filter>
+    </ClCompile>
+    <ClCompile Include="GenerateInstance.cpp" />
+    <ClCompile Include="Heuristics.cpp">
+      <Filter>5. Heuristics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\memory\MemorySize.cpp">
+      <Filter>1. Utils\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\memory\MemoryUsage.cpp">
+      <Filter>1. Utils\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="GreedyBestFirstSearch.cpp">
+      <Filter>6. Search</Filter>
+    </ClCompile>
+    <ClCompile Include="Conflicts.cpp">
+      <Filter>1. Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="BETA.cpp">
+      <Filter>6. Search</Filter>
+    </ClCompile>
+    <ClCompile Include="AStar.cpp">
+      <Filter>7. AStar</Filter>
+    </ClCompile>
+    <ClCompile Include="THETA.cpp">
+      <Filter>6. Search</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>0. Static Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Reader.h">
+      <Filter>1. Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Instance.h">
+      <Filter>2. Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="Show.h">
+      <Filter>1. Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Neighborhood.h">
+      <Filter>3. Neighborhood</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>1. Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomWalk.h">
+      <Filter>4. Local Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Distances.h">
+      <Filter>5. Heuristics</Filter>
+    </ClInclude>
+    <ClInclude Include="EMM.h">
+      <Filter>5. Heuristics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\block.h">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\LCA.h">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\MinCost.h">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\PerfectMatching.h">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\PMimplementation.h">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\PQ.h">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\timer.h">
+      <Filter>1. Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="BestImprovement.h">
+      <Filter>4. Local Search</Filter>
+    </ClInclude>
+    <ClInclude Include="BreadthFirstSearch.h">
+      <Filter>6. Search</Filter>
+    </ClInclude>
+    <ClInclude Include="IPDB.h">
+      <Filter>5. Heuristics</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearConflicts.h">
+      <Filter>5. Heuristics</Filter>
+    </ClInclude>
+    <ClInclude Include="LowerboundIPDB.h">
+      <Filter>5. Heuristics</Filter>
+    </ClInclude>
+    <ClInclude Include="LowerboundPDB.h">
+      <Filter>5. Heuristics</Filter>
+    </ClInclude>
+    <ClInclude Include="GenerateInstance.h" />
+    <ClInclude Include="Heuristics.h">
+      <Filter>5. Heuristics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\memory\MemoryUtils.h">
+      <Filter>1. Utils\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="GreedyBestFirstSearch.h">
+      <Filter>6. Search</Filter>
+    </ClInclude>
+    <ClInclude Include="BETA.h">
+      <Filter>6. Search</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar.h">
+      <Filter>7. AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="THETA.h">
+      <Filter>6. Search</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

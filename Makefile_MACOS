@@ -1,0 +1,22 @@
+CC=g++
+BLOSSOM_DIR=/Users/levilelis/git/instance_generation/Local_Search/Include/blossom5/
+MEMORY_DIR=/Users/levilelis/git/instance_generation/Local_Search/Include/memory/
+CFLAGS=-O3 -fpermissive -std=gnu++11 
+INCLUDES=-I$(BLOSSOM_DIR) -I$(MEMORY_DIR)
+SOURCES=$(wildcard Source/*.cpp) $(wildcard Include/blossom5/*.cpp) $(wildcard Include/memory/*.cpp)
+OBJECTS=$(SOURCES:.cpp=.o)
+DEFINES=-D__lnx__
+
+all:LocalSearch 
+
+LocalSearch:$(OBJECTS) 
+	$(CC) $(OBJECTS) -o bin/$@  $(LDFLAGS)
+
+.cpp.o:
+	$(CC) -c $(DEFINES) $(CFLAGS) $(INCLUDES) $< -o $@ 
+.cc.o:
+	$(CC) -c $(DEFINES) $(CFLAGS) $(INCLUDES) $< -o $@
+	
+clean:
+	rm -f $(OBJECTS)
+	

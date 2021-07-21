@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3E2860D1-EB8C-4489-84D6-7DCC5D6E77E7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SolvingMotionPlaning</RootNamespace>
+    <ProjectName>Local Search</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\</OutDir>
+    <IntDir>$(HOMEDRIVE)\$(HOMEPATH)\$(Configuration)\Local Search\</IntDir>
+    <LibraryPath>$(SolutionDir)\Library;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Boost;$(SolutionDir)\Include\memory;$(SolutionDir)\Include\blossom5;$(SolutionDir)\Include\;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)\Include\blossom5;$(SolutionDir)\Include\memory;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>$(SolutionDir)\Library;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\</OutDir>
+    <IntDir>$(HOMEDRIVE)\$(HOMEPATH)\$(Configuration)\Local Search\</IntDir>
+    <IncludePath>C:\Boost;$(SolutionDir)\Include\memory;$(SolutionDir)\Include\blossom5;$(SolutionDir)\Include\;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)\Include\blossom5;$(SolutionDir)\Include\memory;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\</OutDir>
+    <IntDir>$(HOMEDRIVE)\$(HOMEPATH)\$(Configuration)\Local Search\</IntDir>
+    <LibraryPath>$(SolutionDir)\Library;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Boost;$(SolutionDir)\Include\memory;$(SolutionDir)\Include\blossom5;$(SolutionDir)\Include\;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)\Include\blossom5;$(SolutionDir)\Include\memory;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(SolutionDir)\Library;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\</OutDir>
+    <IntDir>$(HOMEDRIVE)\$(HOMEPATH)\$(Configuration)\Local Search\</IntDir>
+    <IncludePath>C:\Boost;$(SolutionDir)\Include\memory;$(SolutionDir)\Include\blossom5;$(SolutionDir)\Include\;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)\Include\blossom5;$(SolutionDir)\Include\memory;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Desktop\b7d5d8ed5a3f9bc224fd5b2b292162448af5667d\Source\Motion Planning.vcxproj.filters" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Include\blossom5\MinCost.cpp" />
+    <ClCompile Include="..\Include\blossom5\misc.cpp" />
+    <ClCompile Include="..\Include\blossom5\PMduals.cpp" />
+    <ClCompile Include="..\Include\blossom5\PMexpand.cpp" />
+    <ClCompile Include="..\Include\blossom5\PMinit.cpp" />
+    <ClCompile Include="..\Include\blossom5\PMinterface.cpp" />
+    <ClCompile Include="..\Include\blossom5\PMmain.cpp" />
+    <ClCompile Include="..\Include\blossom5\PMrepair.cpp" />
+    <ClCompile Include="..\Include\blossom5\PMshrink.cpp" />
+    <ClCompile Include="..\Include\memory\MemorySize.cpp" />
+    <ClCompile Include="..\Include\memory\MemoryUsage.cpp" />
+    <ClCompile Include="AStar.cpp" />
+    <ClCompile Include="BestImprovement.cpp" />
+    <ClCompile Include="BETA.cpp" />
+    <ClCompile Include="BreadthFirstSearch.cpp" />
+    <ClCompile Include="Conflicts.cpp" />
+    <ClCompile Include="Distances.cpp" />
+    <ClCompile Include="EMM.cpp" />
+    <ClCompile Include="GenerateInstance.cpp" />
+    <ClCompile Include="GreedyBestFirstSearch.cpp" />
+    <ClCompile Include="Heuristics.cpp" />
+    <ClCompile Include="Instance.cpp" />
+    <ClCompile Include="IPDB.cpp" />
+    <ClCompile Include="LinearConflicts.cpp" />
+    <ClCompile Include="LowerboundIPDB.cpp" />
+    <ClCompile Include="LowerboundPDB.cpp" />
+    <ClCompile Include="Neighborhood.cpp" />
+    <ClCompile Include="RandomWalk.cpp" />
+    <ClCompile Include="Reader.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Show.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="THETA.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\blossom5\block.h" />
+    <ClInclude Include="..\Include\blossom5\LCA.h" />
+    <ClInclude Include="..\Include\blossom5\MinCost.h" />
+    <ClInclude Include="..\Include\blossom5\PerfectMatching.h" />
+    <ClInclude Include="..\Include\blossom5\PMimplementation.h" />
+    <ClInclude Include="..\Include\blossom5\PQ.h" />
+    <ClInclude Include="..\Include\blossom5\timer.h" />
+    <ClInclude Include="..\Include\memory\MemoryUtils.h" />
+    <ClInclude Include="AStar.h" />
+    <ClInclude Include="BestImprovement.h" />
+    <ClInclude Include="BETA.h" />
+    <ClInclude Include="BreadthFirstSearch.h" />
+    <ClInclude Include="Distances.h" />
+    <ClInclude Include="EMM.h" />
+    <ClInclude Include="GenerateInstance.h" />
+    <ClInclude Include="GreedyBestFirstSearch.h" />
+    <ClInclude Include="Heuristics.h" />
+    <ClInclude Include="Instance.h" />
+    <ClInclude Include="IPDB.h" />
+    <ClInclude Include="LinearConflicts.h" />
+    <ClInclude Include="LowerboundIPDB.h" />
+    <ClInclude Include="LowerboundPDB.h" />
+    <ClInclude Include="Neighborhood.h" />
+    <ClInclude Include="RandomWalk.h" />
+    <ClInclude Include="Reader.h" />
+    <ClInclude Include="Show.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="THETA.h" />
+    <ClInclude Include="Utils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

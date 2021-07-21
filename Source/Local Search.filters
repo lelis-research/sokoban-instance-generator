@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <Filter>0. Static Header</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>1.Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="InstaceReader.cpp">
+      <Filter>1.Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>5. Node</Filter>
+    </ClCompile>
+    <ClCompile Include="FillOrder.cpp">
+      <Filter>7.Tie Breaking</Filter>
+    </ClCompile>
+    <ClCompile Include="FreezeDeadlock.cpp">
+      <Filter>6. Penalty</Filter>
+    </ClCompile>
+    <ClCompile Include="Lowerbound.cpp">
+      <Filter>3. Lower Bound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\MinCost.cpp">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\misc.cpp">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMduals.cpp">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMexpand.cpp">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMinit.cpp">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMinterface.cpp">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMmain.cpp">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMrepair.cpp">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\blossom5\PMshrink.cpp">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAndResults.cpp">
+      <Filter>4. Results</Filter>
+    </ClCompile>
+    <ClCompile Include="AStar.cpp">
+      <Filter>2. Search</Filter>
+    </ClCompile>
+    <ClCompile Include="Instance.cpp">
+      <Filter>9. Problem</Filter>
+    </ClCompile>
+    <ClCompile Include="Show.cpp">
+      <Filter>1.Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="InstancePreProcessing.cpp">
+      <Filter>1.Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearConflicts.cpp">
+      <Filter>6. Penalty</Filter>
+    </ClCompile>
+    <ClCompile Include="Distances.cpp">
+      <Filter>9. Problem\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MPDB.cpp">
+      <Filter>8. PDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\memory\MemorySize.cpp">
+      <Filter>1.Utils\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\memory\MemoryUsage.cpp">
+      <Filter>1.Utils\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomInitialStates.cpp">
+      <Filter>4. Results</Filter>
+    </ClCompile>
+    <ClCompile Include="PDB.cpp">
+      <Filter>8. PDB</Filter>
+    </ClCompile>
+    <ClCompile Include="LowerboundPDB.cpp">
+      <Filter>3. Lower Bound</Filter>
+    </ClCompile>
+    <ClCompile Include="LowerboundMPDB.cpp">
+      <Filter>3. Lower Bound</Filter>
+    </ClCompile>
+    <ClCompile Include="InstanceDecomposition.cpp">
+      <Filter>9. Problem\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="IPDB.cpp">
+      <Filter>8. PDB</Filter>
+    </ClCompile>
+    <ClCompile Include="LowerboundIPDB.cpp">
+      <Filter>3. Lower Bound</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="0. Static Header">
+      <UniqueIdentifier>{435ea31e-a9dd-4cc4-baeb-bb5c3d398204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1.Utils">
+      <UniqueIdentifier>{b233a077-00d1-4b6e-a270-b90d5ea96364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1.Utils\Blossom5">
+      <UniqueIdentifier>{9a5ee80b-f03d-49b1-b0cc-8fcf456e7c7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Lower Bound">
+      <UniqueIdentifier>{7f7a2867-4603-4609-ba79-bb5127ab35fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. Results">
+      <UniqueIdentifier>{645291c8-2f4c-46dc-95e0-2924ad4b1292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Node">
+      <UniqueIdentifier>{c8c54ac4-6c19-4cf8-a892-6cb7eae5248b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="8. PDB">
+      <UniqueIdentifier>{7c05d8be-5f0d-45ac-8730-74f1ca90f9e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Search">
+      <UniqueIdentifier>{b4bc0f60-811d-43ea-ad46-a4da67a1451d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. Problem">
+      <UniqueIdentifier>{0ebc4379-61ed-41cf-b64c-0144063aeef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="7.Tie Breaking">
+      <UniqueIdentifier>{12a91ad7-c995-4882-b6da-8c7c27f78261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6. Penalty">
+      <UniqueIdentifier>{d1659e97-ee50-4638-b440-ce351dc5bc4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9. Problem\Utils">
+      <UniqueIdentifier>{cdfc340c-5822-407c-a8dd-fd4b4304acb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1.Utils\Memory">
+      <UniqueIdentifier>{98ed1352-4498-40aa-84df-7fb85453fe91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>0. Static Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>1.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="InstaceReader.h">
+      <Filter>1.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>5. Node</Filter>
+    </ClInclude>
+    <ClInclude Include="FillOrder.h">
+      <Filter>7.Tie Breaking</Filter>
+    </ClInclude>
+    <ClInclude Include="FreezeDeadlock.h">
+      <Filter>6. Penalty</Filter>
+    </ClInclude>
+    <ClInclude Include="Lowerbound.h">
+      <Filter>3. Lower Bound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\block.h">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\LCA.h">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\MinCost.h">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\PerfectMatching.h">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\PMimplementation.h">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\PQ.h">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\blossom5\timer.h">
+      <Filter>1.Utils\Blossom5</Filter>
+    </ClInclude>
+    <ClInclude Include="TestAndResults.h">
+      <Filter>4. Results</Filter>
+    </ClInclude>
+    <ClInclude Include="Instance.h">
+      <Filter>9. Problem</Filter>
+    </ClInclude>
+    <ClInclude Include="Show.h">
+      <Filter>1.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="InstancePreProcessing.h">
+      <Filter>1.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearConflicts.h">
+      <Filter>6. Penalty</Filter>
+    </ClInclude>
+    <ClInclude Include="Distances.h">
+      <Filter>9. Problem\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MPDB.h">
+      <Filter>8. PDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\memory\MemoryUtils.h">
+      <Filter>1.Utils\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomInitialStates.h">
+      <Filter>4. Results</Filter>
+    </ClInclude>
+    <ClInclude Include="PDB.h">
+      <Filter>8. PDB</Filter>
+    </ClInclude>
+    <ClInclude Include="LowerboundPDB.h">
+      <Filter>3. Lower Bound</Filter>
+    </ClInclude>
+    <ClInclude Include="LowerboundMPDB.h">
+      <Filter>3. Lower Bound</Filter>
+    </ClInclude>
+    <ClInclude Include="InstanceDecomposition.h">
+      <Filter>9. Problem\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar.h">
+      <Filter>2. Search</Filter>
+    </ClInclude>
+    <ClInclude Include="IPDB.h">
+      <Filter>8. PDB</Filter>
+    </ClInclude>
+    <ClInclude Include="LowerboundIPDB.h">
+      <Filter>3. Lower Bound</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Include\blossom5\CHANGES.TXT">
+      <Filter>1.Utils\Blossom5</Filter>
+    </Text>
+    <Text Include="..\Include\blossom5\GRAPH1.TXT">
+      <Filter>1.Utils\Blossom5</Filter>
+    </Text>
+    <Text Include="..\Include\blossom5\GRAPH2.TXT">
+      <Filter>1.Utils\Blossom5</Filter>
+    </Text>
+    <Text Include="..\Include\blossom5\LICENSE.TXT">
+      <Filter>1.Utils\Blossom5</Filter>
+    </Text>
+    <Text Include="..\Include\blossom5\README.TXT">
+      <Filter>1.Utils\Blossom5</Filter>
+    </Text>
+    <Text Include="..\Include\blossom5\USAGE.TXT">
+      <Filter>1.Utils\Blossom5</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Include\blossom5\instances.inc">
+      <Filter>1.Utils\Blossom5</Filter>
+    </None>
+    <None Include="..\Include\blossom5\Makefile">
+      <Filter>1.Utils\Blossom5</Filter>
+    </None>
+    <None Include="..\..\..\..\..\Desktop\b7d5d8ed5a3f9bc224fd5b2b292162448af5667d\Source\Motion Planning.vcxproj.filters">
+      <Filter>2. Search</Filter>
+    </None>
+  </ItemGroup>
+</Project>
